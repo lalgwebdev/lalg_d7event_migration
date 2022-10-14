@@ -1,0 +1,26 @@
+id: events
+label: 'D7 events'
+
+source:
+ plugin: d7_node
+ node_type: event
+process:
+ title: title
+ status: status
+ created: created
+ changed: changed
+ uid: 
+   plugin: default_value
+   default_value: 1
+ langcode:
+   plugin: default_value
+   default_value: "und"
+ field_series_title: title
+ field_series_description: body
+ field_series_booking_details: field_eventbooking
+ field_series_contact_details: field_eventcontact
+destination:
+ plugin: 'entity:eventseries'
+ default_bundle: lalg_event
+ source_date_field: field_eventdate
+ source_timezone: 'Europe/London'
