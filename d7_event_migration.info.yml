@@ -1,0 +1,9 @@
+name: D7 Events migration
+type: module
+description: Helper module for content migration from old D7 site.
+package: Other
+core_version_requirement: ^9
+
+dependencies:
+ - drupal:migrate_drupal
+ - drupal:recurring_events
