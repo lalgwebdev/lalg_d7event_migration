@@ -6,6 +6,7 @@ source:
  node_type: event
 process:
  title: title
+ body: nid
  status: status
  created: created
  changed: changed
