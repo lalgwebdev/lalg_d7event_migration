@@ -1,0 +1,5 @@
+services:
+  lalg_d7event_migration.store_interval:
+    class: Drupal\lalg_d7_event_migration\EventSubscriber\StoreIntervalSubscriber
+    tags:
+      - {name: event_subscriber }
