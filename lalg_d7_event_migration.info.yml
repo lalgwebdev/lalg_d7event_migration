@@ -1,7 +1,7 @@
 name: D7 Events migration
 type: module
 description: Helper module for content migration from old D7 site.
-version: '0.3'
+version: '0.4'
 package: Other
 core_version_requirement: ^9
 
