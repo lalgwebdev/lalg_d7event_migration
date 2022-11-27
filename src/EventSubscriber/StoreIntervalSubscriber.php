@@ -15,7 +15,7 @@ class StoreIntervalSubscriber implements EventSubscriberInterface {
     }
     $eventdate = $event->getRow()->getSourceProperty('field_eventdate');
     $rrule_in = $enentdate[0]['rrule'] ?? NULL;
-    $rrule = isset($rrule_in) ? RRuleHelper::parseRule($rrule_in) : [ 'interval' -> 1 ];
+    $rrule = isset($rrule_in) ? RRuleHelper::parseRule($rrule_in) : [ 'interval' => 1 ];
     
     // Currently not dealing with monthly interval
     $weekly = $event->getRow()->getDestinationProperty('weekly_recurring_date');
