@@ -2,6 +2,8 @@
 
 namespace Drupal\lalg_d7_event_migration\EventSubscriber;
 
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Drupal\migrate\Event\MigrateEvents;
 use Drupal\migrate\Event\MigratePreRowSaveEvent;
 use Drupal\recurring_events\Plugin\migrate\process\RRuleHelper;
 
